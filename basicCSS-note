@@ -1,0 +1,15 @@
+About CSS
+
+we usually link css file to the main html using meta tag of rel attribute and stylesheet value for best practice
+  <link rel="stylesheet" href"css/style.css">
+
+we can put it inside the <Style> tag or make it inline like <div style="color: blue;"> but it is advised to separate the css file.
+
+the element we use to style the content is called selector
+  body {
+    font-family: Arial;
+  }
+
+Unit
+
+We want to use 

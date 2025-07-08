@@ -1,47 +1,11 @@
-About CSS
+CSS Typography
 
-we usually link css file to the main html using meta tag of rel attribute and stylesheet value for best practice
-  <link rel="stylesheet" href"css/style.css">
+you can make changes to a text with text-decoration to like underline, overline, linethrough, 
+solid, or none. for an example of the use of none value you can remove the default underline
+by the <a href=""> link by using the none value
 
-we can put it inside the <Style> tag or make it inline like <div style="color: blue;"> but it is advised to separate the css file.
+you can also use text-transform to modify text to make it capitalize, uppercase, lowercase, 
+and none for removing any defauly html text-transform to fit your objective.
 
-the element we use to style the content is called selector
-  body {
-    font-family: Arial;
-  }
-
-Unit
-
-We want to use certain unit in certain context, we want to use rem (root element) for font-size instead of px
-for a responsive web design. Px is an absolute unit so it will not scale along with user browser font-size preference.
-
-and it is considered best practice to use rem for a font-size inside an elements, we can use rem unit inside a button 
-with text and scale the padding and padding with em relatively. 
-
-1rem = 16px, 1em = scale relative to the rem unit
-
-however, we can use px unit for other context in a way it wouldn't break the responsiveness of the web page.
-We can use px on stuff like border.
-
-And we want to use % instead of vw for things like max-width to avoid those extra space when the scroll bar is shown 
-
-we can use container class to create a well structured design hiearchy. 
-
-html 
-<div class="containerParent">
-  <div class="containerChild">
-    content
-  </div>
-</div>
-
-css
-.containerParent {
-  background-color: blue;
-}
-
-.containerChile {
-  font-size: 1.5rem;
-}
-
-we can also use id attribute for css, but instead of .containerParent, we use #containerParent.
-but it's not usually advised to use id attribute to avoid clashing with other id name inside the html.
+you can also aligned your text with text-align attribute and values like justify, center, left, 
+right, or inherit.

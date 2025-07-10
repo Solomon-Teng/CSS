@@ -9,3 +9,45 @@ and none for removing any defauly html text-transform to fit your objective.
 
 you can also aligned your text with text-align attribute and values like justify, center, left, 
 right, or inherit.
+
+Pseudo-class
+
+Pseudo-class is a sub attribute inside an element. Say we have <a href=""> element and we want to
+change attribute inside it in CSS, we can use 
+
+-a:visited
+-a:hover
+-a:active
+shorten for LVHA rule to memorize better
+
+in particular order, note that the order how which comes first is very important otherwise some
+pseudo-class might not working.
+
+List Style
+
+we can style list tag like ul or ol with list-style-type.
+
+And we can also control the start order in the ul or ol tag by using start attribute follow by the number order
+
+and we can also use reversed attribute to reverse the order, note that reverse attribute don't need to add value input.
+
+Text-align
+
+now we can align text to the center but in some browser
+the list tag is not affected by this. They likely have 
+the default setting to set list-style-position: outside;
+or something similar, therefore the separation.
+
+So we want to make sure to set the list-style-position
+to inside and then it will follow.
+
+and we can use image for our list-style with
+list-style-image attribute and fill it with
+url("../img/image.png"); 
+
+but note that the image must be small enough to fit in the
+list type size for best practice
+
+but if we want better choice, we can do 
+list-style: disc url("../img/image.png") inside;
+for much effective workflow.
